@@ -180,7 +180,6 @@ public class SMTP extends Thread implements Runnable {
             String logdate = new SimpleDateFormat("yyyyMMddHHmmss").format(new java.util.Date());
             // MailToDisk
             mailToDisk(ID, tomailbox,tooffice,content,logdate);
-            logger.log("<SMTP> Mail von <" + getSession(ID, "from") + "> an <" + getSession(ID, "to") + ">");
             
         } else if(line.toLowerCase().equals("quit")) {
         
